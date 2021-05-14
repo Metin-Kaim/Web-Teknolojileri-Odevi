@@ -1,0 +1,57 @@
+.iHome{
+    margin-right: 10px;
+}
+
+.section{
+    background-color: #f2f2f2;
+}
+
+.H_h2{
+    margin-bottom: 10px;
+}
+.cizgi{
+    border: none;
+    border-top: 3px solid #343a40;
+    max-width: 250px;
+    margin: 25px auto;
+}
+
+.h_icon{
+    color: #343a4094;
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    padding: 0 8px;
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2;
+}
+
+.h_img{
+    height: 100%;
+
+}
+
+.h_img:hover{
+    opacity: 0.85;
+}
+
+.card{
+    margin: 15px 30px;
+}
+
+.imgSection{
+    background: cadetblue;
+}
+
+footer{
+    margin-top: 1px;
+    height: 30px;
+    background: #f2f2f2;
+}
+
+footer p{
+    text-align: center;
+    opacity: 0.7;
+}
+
+
