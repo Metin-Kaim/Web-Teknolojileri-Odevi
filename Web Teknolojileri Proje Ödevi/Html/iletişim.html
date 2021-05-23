@@ -83,8 +83,9 @@
                 return false;
             }
             else{
-                alert("Form Gönderme İşlemi Başarılı.\n\n"+"Gönderilen Bilgiler: \n"+"Ad-Soyad: "+adsoyad+"\n"+"Konu: "+konu+"\n"+"E-posta: "+email+"\n"+"Mesaj: \""+mesaj+"\"\n"+"Cinsiyet: "+cinsiyet);
-                return false;
+                //alert("Form Gönderme İşlemi Başarılı.\n\n"+"Gönderilen Bilgiler: \n"+"Ad-Soyad: "+adsoyad+"\n"+"Konu: "+konu+"\n"+"E-posta: "+email+"\n"+"Mesaj: \""+mesaj+"\"\n"+"Cinsiyet: "+cinsiyet);
+                //return false;
+                //window.location.href = "iletisim.php";
             }
         }
         
@@ -94,9 +95,9 @@
     
 
     <div class="formdivi">
-
-        <form action="" method="POST" name="iletisimform" id="iletisimform" onsubmit="return onay()">
-            <h3>İletişim</h3>
+        <h3>İletişim</h3>
+        <form action="iletisim.php" method="POST" name="iletisimform" id="iletisimform" onsubmit="return onay()">
+            
 
             <input type="text" placeholder="Adınız - Soyadınız..." name="adsoyad" id="adsoyad" class="text">
 
