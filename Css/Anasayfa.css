@@ -47,7 +47,7 @@ footer {
     margin-top: 1px;
     height: 30px;
     background: #212529;
-    
+    margin-top:2%;
 }
 
 footer p {
@@ -97,3 +97,4 @@ footer p {
     margin-bottom: -40px;
     height: 100%;
 }
+
