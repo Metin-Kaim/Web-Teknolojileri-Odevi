@@ -13,7 +13,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Login</title>
+    <title>Giriş</title>
 
     <style>
         .formdivi {
@@ -60,25 +60,26 @@
     if ($gonderVerisi == "Giriş Yap") {
         if ($veriEMail == "" || $veriSifre == "") {
             echo "Lütfen alanları doldurun.";
-        } else if ($veriEMail == $eMail && $veriSifre == $sifre) {
-
+        } 
+        else if ($veriEMail == $eMail && $veriSifre == $sifre) {
             header("Location: Giris.html");
-        } else {
-            echo "İşlem Başarısız Oldu. Tekrar Deneyin.";
+        } 
+        else {
+            header("Location: GirisBasarisiz.html");
         }
     }
 
     ?>
 
     <div class="formdivi">
-        <h4>Giriş Yap</h4>
-        <form action="" method="POST">
+        <h3>Giriş Yap</h3>
+        <form action="" method="POST" name="girisform">
 
             <input type="email" placeholder="E-posta..." name="email" id="email" class="inputform"> <br>
 
             <input type="password" placeholder="Şifre..." name="sifre" id="sifre" class="inputform"><br>
 
-            <input type="submit" value="Giriş Yap" name="giris" id="giris" style="margin: 5px 0 0 0;">
+            <input type="submit" value="Giriş Yap" name="giris" id="giris" class="btn btn-success" style="margin: 5px 0 0 0;">
         </form>
     </div>
 
